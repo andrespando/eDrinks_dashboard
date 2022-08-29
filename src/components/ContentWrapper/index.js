@@ -1,5 +1,5 @@
 import React from "react"
-import { ContentRowTop } from "../ContentRowTop"
+import { ContentRowTop } from '../../components/ContentRowTop';
 
 const ContentWrapper = () => {
     return (
