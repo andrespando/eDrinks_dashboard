@@ -1,12 +1,12 @@
 const Footer = () => {
     return(
-        <footer>
-            <div>
-                <div>
-                    <span>Copyright &copy; Dashboard e-Drinks 2022</span>
+        <footer className="sticky-footer bg-white">
+                <div className="container my-auto">
+                    <div className="copyright text-center my-auto">
+                        <span>Copyright &copy; Dashboard e-Drinks 2022</span>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
     )}
 
 export { Footer }

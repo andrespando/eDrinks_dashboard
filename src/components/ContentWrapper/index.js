@@ -1,11 +1,13 @@
 import React from "react"
 import { ContentRowTop } from '../../components/ContentRowTop';
+import { Footer } from '../../components/Footer';
 
 const ContentWrapper = () => {
     return (
-
-    <div>
+        
+    <div id="content-wrapper" className="d-flex flex-column">
         <ContentRowTop />
+        <Footer />
     </div>
 )}
 

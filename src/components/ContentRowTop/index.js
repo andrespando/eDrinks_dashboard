@@ -19,7 +19,6 @@ const contentRowEdrinks = [
     }
 ]
 
-
 const ContentRowTop = () => {
     return (
 
@@ -34,7 +33,7 @@ const ContentRowTop = () => {
                         title={element.title}
                         color={element.color}
                         total={element.total}
-                        key={element.total + element.title}
+                        key={index + element.title}
                     />)
             })
             }
