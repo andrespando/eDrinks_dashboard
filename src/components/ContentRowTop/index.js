@@ -4,17 +4,17 @@ import ContentRowEdrinks from "../ContentRowEdrinks"
 const contentRowEdrinks = [
     {
         title: "Total de productos",
-        color: "green",
+        color: "primary",
         total: 28
     },
     {
         title: "Total de usuarios",
-        color: "red",
+        color: "success",
         total: 2
     },
     {
         title: "Total de categorías",
-        color: "yelow",
+        color: "warning",
         total: 6
     }
 ]
@@ -22,11 +22,11 @@ const contentRowEdrinks = [
 const ContentRowTop = () => {
     return (
 
-        <div styles={{ backgroundColor: 'black' }}>
-        <div>
-            <h1>Dashboard e-Drinks</h1>
+        <div className="container-fluid">
+        <div className="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 className="h3 mb-0 text-gray-800">Dashboard e-Drinks</h1>
         </div>
-        <div>
+        <div className="row">
             {contentRowEdrinks.map((element, index) => {
                 return (
                     <ContentRowEdrinks
