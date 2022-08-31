@@ -1,33 +1,31 @@
 import React, { Component} from "react";
 import Product from "./Product";
+import useFetch from '../../hooks/useFetch';
 
-class Products extends Component {
-    constructor() {
-        super();
-        this.state = {
-            products : null
-        }
-    }
-
-    componentDidMount(){
-     fetch('api/products')
-     .then(res => res.json())
-     .then(data => {
-        this.setState({ products: data.data})
-     }) .catch(error => console.log(error))   
-    }	
-
-    render () {
-        return(
-            <div className="row">
+function Products() {
+    const { data, isLoading} = useFetch('/api/products', 'data')
+    return(
+        <div className="row" >
             <table className="table">
-                { this.state.products && this.state.products.map((product, i) =>
-                <Product {...product} key = {i} />)
+            <thead>
+                <tr> 
+                    <th>Nombre</th> 
+                    <th>Precio</th>
+                    <th>Proporcion</th>  
+                    <th>Categoria</th> 
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {   data && data.map((product, i)=>
+                    <Product {...product} key={i} />)
                 }
-                </table>
-            </div>
-        )
-    }
+            </tbody>
+          
+            </table>
+            {isLoading && <div>Loading products... </div>} 
+        </div>
+    )
 }
 
 export default Products
