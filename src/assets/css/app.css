@@ -1989,7 +1989,7 @@ pre code {
 }
 
 .form-control::-ms-expand {
-    background-color: transparent;
+    background-color:  #eae0c2;
     border: 0
 }
 
@@ -4275,7 +4275,7 @@ input[type=submit].btn-block {
 }
 
 .nav-link.disabled {
-    color: #858796;
+    color: #eae0c2;
     pointer-events: none;
     cursor: default
 }
@@ -10442,33 +10442,40 @@ button.bg-dark:hover {
 }
 
 .text-primary {
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #4e73df !important
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #224abe !important
 }
 
 .text-secondary {
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #858796 !important
 }
 
 a.text-secondary:focus,
 a.text-secondary:hover {
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #60616f !important
 }
 
 .text-success {
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #1cc88a !important
 }
 
 a.text-success:focus,
 a.text-success:hover {
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #13855c !important
 }
 
 .text-info {
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #36b9cc !important
 }
 
@@ -10478,11 +10485,13 @@ a.text-info:hover {
 }
 
 .text-warning {
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #f6c23e !important
 }
 
 a.text-warning:focus,
 a.text-warning:hover {
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #dda20a !important
 }
 
@@ -10781,49 +10790,41 @@ a:focus {
 
 .bg-gradient-primary {
     background-color: #4e73df;
-    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
     background-size: cover
 }
 
 .bg-gradient-secondary {
     background-color: #eae0c2; 
-    background-image: linear-gradient(180deg, #858796 10%, #60616f 100%);
     background-size: cover
 }
 
 .bg-gradient-success {
     background-color: #1cc88a;
-    background-image: linear-gradient(180deg, #1cc88a 10%, #13855c 100%);
     background-size: cover
 }
 
 .bg-gradient-info {
     background-color: #36b9cc;
-    background-image: linear-gradient(180deg, #36b9cc 10%, #258391 100%);
     background-size: cover
 }
 
 .bg-gradient-warning {
     background-color: #f6c23e;
-    background-image: linear-gradient(180deg, #f6c23e 10%, #dda20a 100%);
     background-size: cover
 }
 
 .bg-gradient-danger {
     background-color: #e74a3b;
-    background-image: linear-gradient(180deg, #e74a3b 10%, #be2617 100%);
     background-size: cover
 }
 
 .bg-gradient-light {
     background-color: #f8f9fc;
-    background-image: linear-gradient(180deg, #f8f9fc 10%, #c2cbe5 100%);
     background-size: cover
 }
 
 .bg-gradient-dark {
     background-color: #5a5c69;
-    background-image: linear-gradient(180deg, #5a5c69 10%, #373840 100%);
     background-size: cover
 }
 
@@ -10868,6 +10869,7 @@ a:focus {
 }
 
 .text-xs {
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: .7rem
 }
 
@@ -10904,7 +10906,12 @@ a:focus {
 }
 
 .text-gray-800 {
-    color: #5a5c69 !important
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    color: #666;
+    margin: 1%;
+    font-weight: bolder;
+    
 }
 
 .text-gray-900 {
@@ -11179,15 +11186,15 @@ a:focus {
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link {
-    color: #d1d3e2
+    color: black
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
-    color: #b7b9cc
+    color: black
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link:active {
-    color: #858796
+    color: black
 }
 
 .sidebar {
@@ -11279,6 +11286,23 @@ a:focus {
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
     color: #4e73df;
     font-weight: 700
+}
+
+.title {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: black;
+    font-size: 24px;
+    margin: 1%;
+    font-weight: bolder;
+}
+
+.title-dashboard{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+    margin: 1%;
+    font-weight: bolder;
 }
 
 .sidebar #sidebarToggle {
@@ -11498,39 +11522,39 @@ a:focus {
 }
 
 .sidebar-light .sidebar-heading {
-    color: #b7b9cc
+    color: black
 }
 
 .sidebar-light .nav-item .nav-link {
-    color: #858796
+    color: black
 }
 
 .sidebar-light .nav-item .nav-link i {
-    color: #d1d3e2
+    color: black
 }
 
 .sidebar-light .nav-item .nav-link:active,
 .sidebar-light .nav-item .nav-link:focus,
 .sidebar-light .nav-item .nav-link:hover {
-    color: #6e707e
+    color: black
 }
 
 .sidebar-light .nav-item .nav-link:active i,
 .sidebar-light .nav-item .nav-link:focus i,
 .sidebar-light .nav-item .nav-link:hover i {
-    color: #6e707e
+    color: black
 }
 
 .sidebar-light .nav-item .nav-link[data-toggle=collapse]::after {
-    color: #b7b9cc
+    color: black
 }
 
 .sidebar-light .nav-item.active .nav-link {
-    color: #6e707e
+    color: black
 }
 
 .sidebar-light .nav-item.active .nav-link i {
-    color: #6e707e
+    color: black
 }
 
 .sidebar-light #sidebarToggle {
@@ -11538,7 +11562,7 @@ a:focus {
 }
 
 .sidebar-light #sidebarToggle::after {
-    color: #b7b9cc
+    color: black
 }
 
 .sidebar-light #sidebarToggle:hover {

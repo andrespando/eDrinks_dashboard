@@ -8,30 +8,19 @@ const SideBar = () => {
                     <img className="w-100" src={img} alt="e-Drinks Logo" />
                 </div>
             </a>
-            <hr className="sidebar-divider my-0" />
-            <li className="nav-item active">
-                <a className="nav-link" href="/">
-                    <i className="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
             <hr className="sidebar-divider" />
-            <div className="sidebar-heading">Secciones</div>
             <li className="nav-item">
                 <a className="nav-link collapsed" href="/">
-                    <i className="fas fa-fw fa-folder"></i>
-                    <span>Productos</span>
+                    <span className="title">Productos</span>
                 </a>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="/">
-                    <i className="fas fa-fw fa-chart-area"></i>
-                    <span>Usuarios</span></a>
+                    <span className="title">Usuarios</span></a>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="/">
-                    <i className="fas fa-fw fa-table"></i>
-                    <span>Categorías</span></a>
+                    <span className="title">Categorías</span></a>
             </li>
             <hr className="sidebar-divider d-none d-md-block" />
         </ul>)}
