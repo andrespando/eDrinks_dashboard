@@ -1,15 +1,16 @@
 import React, { Component} from "react";
+import Product from "./Product";
 
 class Products extends Component {
     constructor() {
         super();
         this.state = {
-            product : null
+            products : null
         }
     }
 
     componentDidMount(){
-     fetch('api/produts')
+     fetch('api/products')
      .then(res => res.json())
      .then(data => {
         this.setState({ products: data.data})
@@ -18,11 +19,15 @@ class Products extends Component {
 
     render () {
         return(
-            <div>
-                { this.state.products && this.state.product.map((product, i) =>
+            <div className="row">
+            <table className="table">
+                { this.state.products && this.state.products.map((product, i) =>
                 <Product {...product} key = {i} />)
                 }
+                </table>
             </div>
         )
     }
 }
+
+export default Products
