@@ -1,8 +1,5 @@
 import React, { Component} from "react";
 
-function Product ({name, category_id, price, size})
-
-
 class Products extends Component {
     constructor() {
         super();
