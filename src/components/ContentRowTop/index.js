@@ -10,7 +10,7 @@ const contentRowEdrinks = [
     {
         title: "Total de usuarios",
         color: "success",
-        total: 2
+        total: 4
     },
     {
         title: "Total de categorías",
