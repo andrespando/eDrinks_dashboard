@@ -22,7 +22,6 @@ const SideBar = () => {
                 <a className="nav-link" href="/">
                     <span className="title">Categorías</span></a>
             </li>
-            <hr className="sidebar-divider d-none d-md-block" />
         </ul>)}
 
 export { SideBar }

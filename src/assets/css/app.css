@@ -3441,7 +3441,7 @@ input[type=submit].btn-block {
     height: 0;
     margin: .5rem 0;
     overflow: hidden;
-    border-top: 1px solid #eaecf4
+    border-top: 1px solid #666
 }
 
 .dropdown-item {
@@ -11291,7 +11291,7 @@ a:focus {
 .title {
     font-family: 'PT Sans Narrow', sans-serif;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     margin: 1%;
     font-weight: bolder;
 }
@@ -11360,7 +11360,8 @@ a:focus {
 }
 
 .sidebar hr.sidebar-divider {
-    margin: 0 1rem 1rem
+    margin: 0 1rem 1rem;
+    color: #666
 }
 
 .sidebar .sidebar-heading {
@@ -11518,7 +11519,7 @@ a:focus {
 }
 
 .sidebar-light hr.sidebar-divider {
-    border-top: 1px solid #eaecf4
+    border-top: 1px solid #666
 }
 
 .sidebar-light .sidebar-heading {
@@ -11574,7 +11575,7 @@ a:focus {
 }
 
 .sidebar-dark hr.sidebar-divider {
-    border-top: 1px solid rgba(255, 255, 255, .15)
+    border-top: 1px solid #666
 }
 
 .sidebar-dark .sidebar-heading {
