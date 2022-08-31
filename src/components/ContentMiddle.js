@@ -10,7 +10,7 @@ export default function ContentMiddle(){
                 <Card title="Listado de categorías">
                     <Categories />
                 </Card>
-                <Card title="Ultimo producto creado">
+                <Card title="Último producto creado">
                     <LastProduct />
                 </Card>  
                 <Card title="Listado de productos">
